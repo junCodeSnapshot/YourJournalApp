@@ -1,0 +1,20 @@
+.loading-container{
+    // background-color: $primary;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparentize($color: white, $amount: .1);
+}
+.loading-mesage-container{
+    font-size: x-large;
+    background-color: lighten($color: $primary, $amount: 45);
+    width:25%;
+    height: 40%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

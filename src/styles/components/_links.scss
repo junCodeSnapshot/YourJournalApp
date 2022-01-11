@@ -1,0 +1,16 @@
+.link{
+    text-decoration: none;
+    color: $dark-grey;
+    transition: .3s ease;
+    &:hover{
+        color: $primary;
+        transform: translateX(5px);
+        text-shadow: 5px $google-blue;
+    }
+}
+.link-center{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}

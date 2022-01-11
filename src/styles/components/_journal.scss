@@ -1,0 +1,126 @@
+.journal__main-content{
+    display: flex;
+}
+.journal__sidebar{
+    background-color: $dark-grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: fit-content;
+    max-width: 300px;
+    min-width: 294px;
+}
+.journal__sidebar-navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.journal__sidebar-navbar h3{
+    font-weight: lighter;
+}
+.journal__newEntry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+    transition: color .3s;
+    &:hover{
+        color: $light-grey;
+    }
+}
+.journal__entries{
+    margin-top: 30px;
+    flex: 1 1 auto;
+    overflow-y: auto;
+}     
+.journal__entry{
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    color: $dark-grey;
+    // display: flex ;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    width: 100%;
+    height: 75px;
+    flex: 1 2 auto;
+}
+.journal__entry-picture{
+    height: 75px;
+    width: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+.journal__nopicture{
+    height: 75px;
+    width: 69px;
+    background-color: lighten($color: $primary, $amount: 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3%;
+}
+.journal__entry,
+.journal__entry-picture{
+    &:hover{
+        background-color: lighten($color: $primary, $amount: 36)
+    }
+}
+.jornal__entry-body{
+    padding: 7px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.journal__entry-title{
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+    
+}
+.journal__entry-content{
+    font-size: 10px;
+    width: fit-content;
+    overflow-y: auto;
+
+}   
+.journal__entry-date-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 64px;
+    font-size: 14px;
+}
+#day{
+    font-style: italic;
+    font-weight: lighter;
+}
+#day__num{
+    font-weight: bold;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 10px;
+    background-color: lighten($color: $primary, $amount: 25);
+}
+::-webkit-scrollbar-thumb{
+    background-color: darken($color: $primary, $amount: 6);
+    border-radius: 10px;
+    &:active{
+        background-color: lighten($color: $primary, $amount: 15);
+    }
+}

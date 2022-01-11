@@ -1,0 +1,60 @@
+.note__main-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.notes__appbar{
+    display: flex;
+    background-color: $primary;
+    justify-content: space-between;
+    height: fit-content;
+
+    color: lighten($color: $primary, $amount: 40);
+    align-items: center;
+    padding-left: 10px;
+    
+}
+.notes__content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+.notes__title-input{
+    color: $dark-grey;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.notes__textarea{
+    color: $dark-grey;
+    font-size: 20px;
+    flex: 1 1 auto;
+}
+.notes__title-input, .notes__textarea{
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+.notes__image{
+    img{
+        box-shadow: 5px 5px $dark-grey;
+    }
+    width: fit-content;
+    height: fit-content;
+   
+}
+.notes__noImageText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lighten($color: $primary, $amount: 30);
+    width: 240px;
+    height: 120px;
+    transition: .3s transform ease;
+    &:hover{
+        background-color: darken($color: $primary, $amount: 10);
+        transform: translateX(3px);
+    }
+}
